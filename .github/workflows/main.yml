@@ -58,9 +58,13 @@ jobs:
           #requirements_path: # optional, default is 
           # Version of Sphinx
           # sphinx_version: # optional, default is 
-
+      
+      - name: Delete Branch
+        run: |
+          git push origin --delete gh-pages
+      
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+          branch: gh-pages
