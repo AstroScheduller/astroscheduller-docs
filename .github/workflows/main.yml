@@ -51,7 +51,7 @@ jobs:
           # Relative path under $repository_path to documentation source files
           documentation_path: ./source/ # optional, default is ./docs
           # Git branch where Github Pages will be deployed
-          target_branch: gh-pages # optional, default is gh-pages
+          target_branch: main # optional, default is gh-pages
           # Relative path under $GITHUB_WORKSPACE to place the repository
           repository_path: ./ # optional, default is .
           # Relative path under $repository_path to pip requirements file
