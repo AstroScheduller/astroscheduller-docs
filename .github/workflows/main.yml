@@ -41,11 +41,11 @@ jobs:
         uses: sphinx-notes/pages@2.0
         with:
           # Relative path under $repository_path to documentation source files
-          documentation_path: . # optional, default is ./docs
+          documentation_path: ./ # optional, default is ./docs
           # Git branch where Github Pages will be deployed
           target_branch: gh-pages # optional, default is gh-pages
           # Relative path under $GITHUB_WORKSPACE to place the repository
-          repository_path: .# optional, default is .
+          repository_path: ./ # optional, default is .
           # Relative path under $repository_path to pip requirements file
           #requirements_path: # optional, default is 
           # Version of Sphinx
