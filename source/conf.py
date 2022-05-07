@@ -54,8 +54,7 @@ html_static_path = ['_static']
 # Markdown support
 from recommonmark.parser import CommonMarkParser
 extensions = [
-    'recommonmark',
-    'sphinx_markdown_tables'
+    'recommonmark'
 ]
 
 source_parsers = {
