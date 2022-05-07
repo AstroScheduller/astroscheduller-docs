@@ -32,6 +32,7 @@ extensions = [
 #    'sphinx.ext.mathjax',
 #    'sphinx.ext.viewcode',
     'recommonmark',
+    'sphinx.ext.githubpages',
 #    'sphinx_markdown_tables'
 ]
 
