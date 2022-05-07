@@ -10,6 +10,7 @@ Welcome to AstroScheduller's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   getting-started
 
 
 Indices and tables
