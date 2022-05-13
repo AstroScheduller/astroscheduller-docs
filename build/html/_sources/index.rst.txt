@@ -5,14 +5,29 @@
 
 The AstroScheduller Project
 ===========================================
+The AstroScheduller project is developing a user-friendly Python package with an algorithm for planning astronomical observations. This project was taken from a previous project `AstroScheduller.py <https://github.com/AstroScheduller/AstroSchedullerPy>`__. 
 
+The way the documentation is organized
+-------------------------------------------
+The AstroScheduller Documentation is organized in three main parts:
+
+:ref:`Tutorials`
+      A general description of what the package can do, and non-technical instructions on how to use the package. In addition, installation instructions are included in the chapter `Getting Started: Installation <./tutorials-docs/getting-started.html>`__.
+
+:ref:`Examples`
+      Examples on how to use the AstroScheduller package.
+   
+:ref:`Reference`
+      Reference on the AstroScheduller package.
 
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Table of Contents:
 
    tutorials
+   examples
+   reference
 
 
 Indices and tables
