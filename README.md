@@ -22,4 +22,4 @@ These documentations are hosted on the Github Pages: https://astroscheduller.git
 
 ### Acknowledgement 
 
-The documentation pages were built with [Sphinx](http://sphinx-doc.org/) using a [theme](https://github.com/rtfd/sphinx_rtd_theme) provided by [Read the Docs](https://readthedocs.org/). The way the document is organized is inspired by the [PINT Is Not TEMPO3](https://github.com/nanograv/PINT).
+The documentation pages were built with [Sphinx](http://sphinx-doc.org/) using a [theme](https://github.com/rtfd/sphinx_rtd_theme) provided by [Read the Docs](https://readthedocs.org/). The structure of the documentation is inspired by both the [Django](https://docs.djangoproject.com/en/2.2/) and [PINT Is Not TEMPO3](https://github.com/nanograv/PINT).
