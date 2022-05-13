@@ -3,16 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-The AstroScheduller Project
+Tutorials
 ===========================================
-
-
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
-   tutorials
+   
+   tutorials-docs/getting-started.md
+   tutorials-docs/the-first-observation.md
+   tutorials-docs/edit.md
+   tutorials-docs/preview.md
+   tutorials-docs/save-and-export.md
 
 
 Indices and tables
