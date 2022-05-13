@@ -20,6 +20,10 @@ The AstroScheduller Documentation is organized in three main parts:
 :ref:`Reference`
       A technical description of how specific functions work. This section of the documentation is intended for those who want to learn more about the package and/or are involved in developing the package.
 
+Acknowledgement 
+-------------------------------------------
+The documentation pages were built with `Sphinx <http://sphinx-doc.org/>`__ using a `theme <https://github.com/rtfd/sphinx_rtd_theme>`__ provided by `Read the Docs <https://readthedocs.org/>`__. The structure of the documentation is inspired by both the `Django <https://docs.djangoproject.com/en/2.2/>`__ and `PINT Is Not TEMPO3 <https://github.com/nanograv/PINT>`__.
+
 
 .. toctree::
    :maxdepth: 2

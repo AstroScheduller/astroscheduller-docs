@@ -7,6 +7,7 @@
 
 Tutorials
 ===========================================
+A general description of what the package can do, and non-technical instructions on how to use the package. In addition, installation instructions are included in `Getting Started: Installation <./tutorials-docs/getting-started.html>`__.
 
 .. toctree::
    :maxdepth: 2
@@ -18,10 +19,3 @@ Tutorials
    tutorials-docs/preview.md
    tutorials-docs/save-and-export.md
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

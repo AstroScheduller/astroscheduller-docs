@@ -7,6 +7,7 @@
 
 Examples
 ===========================================
+Examples on how to use the AstroScheduller package. Most of these examples are demonstrated in the tutorials and are provided in the .ipynb and .py files.
 
 .. toctree::
    :maxdepth: 2
@@ -19,9 +20,4 @@ Examples
    tutorials-docs/save-and-export.md
 
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

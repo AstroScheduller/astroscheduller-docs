@@ -7,21 +7,19 @@
 
 Reference
 ===========================================
+A technical description of how specific functions work. This section of the documentation is intended for those who want to learn more about the package and/or are involved in developing the package.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Python Package
    
-   tutorials-docs/getting-started.md
-   tutorials-docs/the-first-observation.md
-   tutorials-docs/edit.md
-   tutorials-docs/preview.md
-   tutorials-docs/save-and-export.md
+   reference-docs/python.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Go Module
+   
+   reference-docs/go.rst
 
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
