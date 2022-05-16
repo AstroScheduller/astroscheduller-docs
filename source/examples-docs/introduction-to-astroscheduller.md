@@ -34,6 +34,6 @@ obsPlan.schedule.to_table("./example.txt")                   # Export the schedu
 
 ------------------------------------
 Download/Open this example as: 
- - [script (*.py)](https://github.com/AstroScheduller/astroscheduller.github.io/examples-docs.introduction-to-astroscheduller_files/intro_to_ash.py)
- - [notebook (*.ipynb)](https://github.com/AstroScheduller/astroscheduller.github.io/examples-docs.introduction-to-astroscheduller_files/intro_to_ash.ipynb)
+ - [script (*.py)](https://github.com/AstroScheduller/astroscheduller.github.io/blob/main/source/examples-docs/introduction-to-astroscheduller_files/intro_to_ash.py)
+ - [notebook (*.ipynb)](https://github.com/AstroScheduller/astroscheduller.github.io/blob/main/source/examples-docs/introduction-to-astroscheduller_files/intro_to_ash.ipynb)
  - [Google Colab (*.ipynb)](https://colab.research.google.com/drive/1pnGP9p53ELxzyRdV7aMAa21Q0RGHIbaM?usp=sharing#scrollTo=sRRghTNwipp4)
