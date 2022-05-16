@@ -10,7 +10,7 @@ Tutorials
 A general description of what the package can do, and non-technical instructions on how to use the package. In addition, installation instructions are included in `Getting Started: Installation <./tutorials-docs/getting-started.html>`__.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 5
    :caption: Contents:
    
    tutorials-docs/getting-started.md

@@ -3,23 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. _`ReferenceGo`:
+.. _`utilities_py`:
 
-Go Module Functions
+utilities.py
 ===========================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 5
    :caption: Contents:
    
-   go-docs/main_go.md
-   go-docs/rises_go.md
-   go-docs/list_go.md
-   go-docs/sort_go.md
-   go-docs/score_go.md
-   go-docs/time_go.md
-   go-docs/coordinates_go.md
-   go-docs/utilities_go.md
-   go-docs/variables_go.md
+   utilities_py/ash.utilities.device.md
+   utilities_py/ash.utilities.utilities.md
+
+   
 
 

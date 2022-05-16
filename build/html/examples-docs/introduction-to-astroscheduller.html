@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction to AstroScheduller &mdash; AstroScheduller  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Reference" href="../reference.html" />
+    <link rel="prev" title="Examples" href="../examples.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> AstroScheduller
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../examples.html">Examples</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Introduction to AstroScheduller</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../reference.html">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AstroScheduller</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../examples.html">Examples</a> &raquo;</li>
+      <li>Introduction to AstroScheduller</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/examples-docs/introduction-to-astroscheduller.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction-to-astroscheduller">
+<h1>Introduction to AstroScheduller<a class="headerlink" href="#introduction-to-astroscheduller" title="Permalink to this headline"></a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example: Introduction to AstroScheduller</span>
+<span class="c1"># https://github.com/xiawenke/AstroScheduller/blob/Dev/examples/intro_to_ash.py</span>
+
+<span class="kn">import</span> <span class="nn">astroscheduller</span> <span class="k">as</span> <span class="nn">ash</span>                                <span class="c1"># Import AstroScheduller</span>
+
+<span class="c1"># Prepare for an example</span>
+<span class="n">ash</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/AstroScheduller/AstroScheduller/Dev/tests/psr_list_debug.xml&quot;</span><span class="p">)</span>
+
+<span class="n">obsPlan</span> <span class="o">=</span> <span class="n">ash</span><span class="o">.</span><span class="n">scheduller</span><span class="p">()</span>                                   <span class="c1"># Create a new scheduller object</span>
+<span class="n">obsPlan</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">from_xml</span><span class="p">(</span><span class="s2">&quot;./example.xml&quot;</span><span class="p">)</span>                    <span class="c1"># Load the objects from a XML file</span>
+<span class="n">obsPlan</span><span class="o">.</span><span class="n">get_schedule</span><span class="p">()</span>                                       <span class="c1"># Generate the schedule</span>
+<span class="n">obsPlan</span><span class="o">.</span><span class="n">stats</span><span class="p">()</span>                                              <span class="c1"># Calculate the statistics</span>
+<span class="n">obsPlan</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>                                        <span class="c1"># Plot the schedule</span>
+<span class="n">obsPlan</span><span class="o">.</span><span class="n">schedule</span><span class="o">.</span><span class="n">to_table</span><span class="p">(</span><span class="s2">&quot;./example.txt&quot;</span><span class="p">)</span>                   <span class="c1"># Export the schedule to a table</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==========</span> <span class="n">STATS</span> <span class="o">==========</span>
+<span class="o">|</span> <span class="n">All</span> <span class="n">Objects</span><span class="p">:</span> <span class="mi">85</span>
+<span class="o">|</span> <span class="n">Scheduled</span> <span class="n">Objects</span><span class="p">:</span> <span class="mi">42</span>
+<span class="o">|</span> <span class="n">Unscheduled</span> <span class="n">Objects</span><span class="p">:</span> <span class="mi">43</span>
+<span class="o">|</span> <span class="n">Observation</span> <span class="n">Duration</span><span class="p">:</span> <span class="mi">83230</span>
+<span class="o">|</span> <span class="n">Wait</span> <span class="n">Duration</span><span class="p">:</span> <span class="mi">2820</span>
+<span class="o">|</span> <span class="n">Schedule</span> <span class="n">Rate</span><span class="p">:</span> <span class="mf">49.41</span><span class="o">%</span>
+<span class="o">===========================</span>
+</pre></div>
+</div>
+<p><img alt="png" src="../_images/AstroSchedullerGo_demo_0_1.png" /></p>
+<hr class="docutils" />
+<p>Download/Open this example as:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/AstroScheduller/astroscheduller.github.io/examples-docs.introduction-to-astroscheduller_files/intro_to_ash.py">script (*.py)</a></p></li>
+<li><p><a class="reference external" href="https://github.com/AstroScheduller/astroscheduller.github.io/examples-docs.introduction-to-astroscheduller_files/intro_to_ash.ipynb">notebook (*.ipynb)</a></p></li>
+<li><p><a class="reference external" href="https://colab.research.google.com/drive/1pnGP9p53ELxzyRdV7aMAa21Q0RGHIbaM?usp=sharing#scrollTo=sRRghTNwipp4">Google Colab (*.ipynb)</a></p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../examples.html" class="btn btn-neutral float-left" title="Examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../reference.html" class="btn btn-neutral float-right" title="Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, AstroScheduller Developers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

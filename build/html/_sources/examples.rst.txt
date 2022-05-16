@@ -10,14 +10,7 @@ Examples
 Examples on how to use the AstroScheduller package. Most of these examples are demonstrated in the tutorials and are provided in the .ipynb and .py files.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 5
    :caption: Contents:
    
-   tutorials-docs/getting-started.md
-   tutorials-docs/the-first-observation.md
-   tutorials-docs/edit.md
-   tutorials-docs/preview.md
-   tutorials-docs/save-and-export.md
-
-
-
+   examples-docs/introduction-to-astroscheduller.md

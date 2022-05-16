@@ -9,9 +9,26 @@ Python Package Functions
 ===========================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 5
    :caption: Contents:
    
-..   python-docs/python.rst
+   python-docs/config.py/ash.config.configmd
+   python-docs/core.py/ash.core.core.md
+   python-docs/example.py/ash.example.example.md
+   python-docs/io.py/ash.io.schedule_from.md
+   python-docs/io.py/ash.io.schedule_to.md
+   python-docs/io.py/ash.io.scheduller_io.md
+   python-docs/plot.py/ash.plot.plot.md
+   python-docs/plot.py/ash.plot.schedule_plot.md
+   python-docs/schedule_edit.py/ash.schedule_edit.schedule_edit.md
+   python-docs/schedule.py/ash.schedule.schedule_scheduller.md
+   python-docs/schedule.py/ash.schedule.schedule.md
+   python-docs/scheduller.py/ash.scheduller.scheduller.md
+   python-docs/stats.py/ash.stats.scheduller_stats.md
+   python-docs/stats.py/ash.stats.schedule_stats.md
+   python-docs/utilities.py/ash.utilities.device.md
+   python-docs/utilities.py/ash.utilities.utilities.md
+
+   
 
 

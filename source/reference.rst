@@ -10,16 +10,16 @@ Reference
 A technical description of how specific functions work. This section of the documentation is intended for those who want to learn more about the package and/or are involved in developing the package.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 5
    :caption: Python Package
    
-   reference-docs/python.rst
+   reference-docs/python-package.rst
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 5
    :caption: Go Module
    
-   reference-docs/go.rst
+   reference-docs/go-module.rst
 
 
 

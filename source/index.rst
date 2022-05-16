@@ -26,7 +26,7 @@ The documentation pages were built with `Sphinx <http://sphinx-doc.org/>`__ usin
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 5
    :caption: Table of Contents:
 
    tutorials
