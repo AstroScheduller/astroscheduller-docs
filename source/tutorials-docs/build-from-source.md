@@ -81,12 +81,18 @@ The AstroSchedullerGo Module will be downloaded if a pre-build version is found;
 
 #### What if there is no pre-build version available for my platform? 
 
-If you are unfortunately not to be provided with a pre-build version, you may need to compile the source code yourself. The compilation process will be easy if you already have a GoLang environment on your device. 
+If you are unfortunately not to be provided with a pre-build version, you may need to compile the source code yourself. The compilation process will be easy if you already have a GoLang environment on your device. To install the GoLang, see the official documentation [Install the latest version of Go](https://go.dev/learn/). 
 
 By using the following command to build the module:
 
 ```shell
 cd /PATH/TO/ASTROSCHEDULLER/ && go build -buildmode=c-shared -o _scheduller.so ./*.go
+```
+
+For Windows users, use the following: 
+
+```bash
+cd /PATH/TO/ASTROSCHEDULLER/ && go build -buildmode=c-shared -o _scheduller.so
 ```
 
 Then, use the Python script below to install the module:
@@ -95,6 +101,4 @@ Then, use the Python script below to install the module:
 import astroscheduller as ash
 ash.core().install("/PATH/TO/ASTROSCHEDULLER/_scheduller.so")
 ```
-
-For more instructions on how to compile your own AstroSchedullerGo Module (such as how to install a GoLang compiler), please refer to the Build From Source section. 
 
