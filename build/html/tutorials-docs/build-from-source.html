@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appendix: Build From Source &mdash; AstroScheduller  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Examples" href="../examples.html" />
+    <link rel="prev" title="05. Save &amp; Export the Observation (TBD)" href="save-and-export.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> AstroScheduller
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../tutorials.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html">01.Getting Started: Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="the-first-observation.html">02. Planning for the First Observation (TBD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="edit.html">03. Edit the Observation (TBD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preview.html">04. Preview the Observation (TBD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="save-and-export.html">05. Save &amp; Export the Observation (TBD)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Appendix: Build From Source</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installation-install-sh">Installation: install.sh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#astroscheduller-python-package">AstroScheduller Python Package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#astroschedullergo-modules">AstroSchedullerGo Modules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference.html">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AstroScheduller</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../tutorials.html">Tutorials</a> &raquo;</li>
+      <li>Appendix: Build From Source</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/tutorials-docs/build-from-source.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="appendix-build-from-source">
+<h1>Appendix: Build From Source<a class="headerlink" href="#appendix-build-from-source" title="Permalink to this headline"></a></h1>
+<section id="installation-install-sh">
+<h2>Installation: install.sh<a class="headerlink" href="#installation-install-sh" title="Permalink to this headline"></a></h2>
+<p>A script is available for automatically building and installing the AstroScheduller Package on Linux/MacOS, but <strong>please note that the script has NOT BEEN FULLY TESTED on different devices and platforms at the point</strong>. The platforms that have been tested so far are as follows:</p>
+<ul class="simple">
+<li><p>Ubuntu 20.04 LTS</p></li>
+<li><p>Google Colab [<a class="reference external" href="https://colab.research.google.com/drive/1pnGP9p53ELxzyRdV7aMAa21Q0RGHIbaM?usp=sharing">Demo</a>]</p></li>
+</ul>
+<p>To use the script, run the following command in the terminal:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/xiawenke/AstroScheduller.git <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ./AstroScheduller <span class="o">&amp;&amp;</span> bash ./install.sh
+</pre></div>
+</div>
+<p>If the script does not work properly, please continue to the following classic way of installation.</p>
+<p>In addition, AstroScheduller would like your help to improve the script (such as report an issue or even commit your script to the project).</p>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h2>
+<section id="astroscheduller-python-package">
+<h3>AstroScheduller Python Package<a class="headerlink" href="#astroscheduller-python-package" title="Permalink to this headline"></a></h3>
+<section id="prerequisites">
+<h4>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline"></a></h4>
+<p>There are several python packages are required to run the AstroScheduller are listed below. All those packages are included in a standard Anaconda environment.</p>
+<ul class="simple">
+<li><p>numpy</p></li>
+<li><p>matplotlib</p></li>
+<li><p>requests</p></li>
+</ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">Astropy</span></code> Package is not required by the AstroScheduller. However, it is highly recommended, since several AstroScheduller functions are compatible with Astropy objects (such as coordinates and time objects).</p>
+</section>
+<section id="using-pip-setup-py">
+<h4>Using pip/setup.py<a class="headerlink" href="#using-pip-setup-py" title="Permalink to this headline"></a></h4>
+<p>Firstly clone the project from the Github before installing AstroScheduller with the setup.py:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/xiawenke/AstroScheduller.git
+</pre></div>
+</div>
+<p>Switch to the <code class="docutils literal notranslate"><span class="pre">AstroScheduller</span></code> directory:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ./AstroScheduller
+</pre></div>
+</div>
+<p>Run the installation:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install ./
+</pre></div>
+</div>
+<p>If pip for the Python on the device is not working for some reason, the following command can be used instead. However, please make sure all the packages required in section <a class="reference external" href="#prerequisites">Prerequisites</a> are installed and work properly.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python setup.py install
+</pre></div>
+</div>
+<p>Once the installation process is completed, you may test the package by the following commands to see if it works:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> wenky@Wenkys-MacBook-Pro GitHub % python
+Python <span class="m">3</span>.x.xx
+Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&quot;</span>, <span class="s2">&quot;credits&quot;</span> or <span class="s2">&quot;license&quot;</span> <span class="k">for</span> more information.
+&gt;&gt;&gt; import astroscheduller
+&gt;&gt;&gt;
+</pre></div>
+</div>
+<p>So far you have finished with the Python part of the installation; the GoLang part of the AstroScheduller (called the <code class="docutils literal notranslate"><span class="pre">AstroSchedullerGo</span></code>) is not usually included in the Python package. The pre-build version of the AstroSchedullerGo Module is automatically downloaded from Github as the package has been imported if the internet is connected as well as <strong>a pre-built version for the platform is available</strong>.</p>
+<p>If errors such as <em>“The pre-build version of the AstroScheduller Module is not available”</em> and <em>“OSError: /xxx/xxx.so: invalid ELF header”</em> is reported, it means there is no pre-build module available for your platform. In this case, please see Install the AstroSchedullerGo Modules for more information.</p>
+</section>
+</section>
+<section id="astroschedullergo-modules">
+<h3>AstroSchedullerGo Modules<a class="headerlink" href="#astroschedullergo-modules" title="Permalink to this headline"></a></h3>
+<p>There are several pre-built versions of AstroSchedullerGo are provided, even though they are not guaranteed to perfectly work on all the devices and platforms.</p>
+<p>To check if a pre-build version of the module is available for your platform, use the following Python scripts:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">astroscheduller</span> <span class="k">as</span> <span class="nn">ash</span>
+<span class="n">ash</span><span class="o">.</span><span class="n">core</span><span class="p">()</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The AstroSchedullerGo Module will be downloaded if a pre-build version is found; otherwise, an exception <em>“The pre-build version of the AstroScheduller Module is not available”</em> will be reported.</p>
+<section id="what-if-there-is-no-pre-build-version-available-for-my-platform">
+<h4>What if there is no pre-build version available for my platform?<a class="headerlink" href="#what-if-there-is-no-pre-build-version-available-for-my-platform" title="Permalink to this headline"></a></h4>
+<p>If you are unfortunately not to be provided with a pre-build version, you may need to compile the source code yourself. The compilation process will be easy if you already have a GoLang environment on your device.</p>
+<p>By using the following command to build the module:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> /PATH/TO/ASTROSCHEDULLER/ <span class="o">&amp;&amp;</span> go build -buildmode<span class="o">=</span>c-shared -o _scheduller.so ./*.go
+</pre></div>
+</div>
+<p>Then, use the Python script below to install the module:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">astroscheduller</span> <span class="k">as</span> <span class="nn">ash</span>
+<span class="n">ash</span><span class="o">.</span><span class="n">core</span><span class="p">()</span><span class="o">.</span><span class="n">install</span><span class="p">(</span><span class="s2">&quot;/PATH/TO/ASTROSCHEDULLER/_scheduller.so&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For more instructions on how to compile your own AstroSchedullerGo Module (such as how to install a GoLang compiler), please refer to the Build From Source section.</p>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="save-and-export.html" class="btn btn-neutral float-left" title="05. Save &amp; Export the Observation (TBD)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../examples.html" class="btn btn-neutral float-right" title="Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, AstroScheduller Developers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

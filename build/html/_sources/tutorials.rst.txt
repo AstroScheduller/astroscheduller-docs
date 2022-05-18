@@ -18,4 +18,5 @@ A general description of what the package can do, and non-technical instructions
    tutorials-docs/edit.md
    tutorials-docs/preview.md
    tutorials-docs/save-and-export.md
+   tutorials-docs/build-from-source.md
 
