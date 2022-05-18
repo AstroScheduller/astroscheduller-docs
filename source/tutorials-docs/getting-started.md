@@ -14,7 +14,7 @@ The `Astropy` Package is not required by the AstroScheduller. However, it is hig
 
 #### Using PyPI
 
-The AstroScheduller Package is available on PyPI. Using the following command to install the package and the required packages will automatically installed: 
+The most recent stable version of  AstroScheduller Package is available on PyPI. Using the following command to install the package and the required packages will automatically installed: 
 
 ```bash
 pip install AstroScheduller
