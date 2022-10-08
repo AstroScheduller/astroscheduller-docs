@@ -14,11 +14,35 @@ The `Astropy` Package is not required by the AstroScheduller. However, it is hig
 
 #### Using PyPI
 
-The most recent stable version of  AstroScheduller Package is available on PyPI. Using the following command to install the package and the required packages will automatically installed: 
+The most recent stable version of  AstroScheduller Package is available on PyPI. Using the following command to install the package and the required packages will automatically be installed: 
 
 ```bash
 pip install AstroScheduller
 ```
+
+The AstroScheduller GUI uses a package called [Tkinter](https://tkdocs.com/tutorial/install.html), which is required since AstroScheduller v1.0.0. **This package will not be able to install automatically by PyPI. **If you are using the [Anaconda](https://www.anaconda.com), the Tkinter Package might be included in the distribution. To check if Tkinter has been already installed, try the following: 
+
+```{shell}
+Python 3.8.10 | packaged by conda-forge 
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tkinter
+```
+
+If Tkinter is not installed, an exception will be thrown. Then, **the Tkinter installation would be as the following**: 
+
+```{shell}
+# For Ubuntu: 
+sudo apt-get update && sudo apt-get install python3-tk
+
+# For MacOS: 
+## You should first install the Homebrew software, then install the Tkinter. 
+## Using the command as follows: 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && brew install python-tk
+```
+
+The Tkinter installation methods that were mentioned above are the fastest way of doing that. Please see [Tkinter website](https://tkdocs.com/tutorial/install.html) for more information. 
+
+
 
 ## Plan for the First Observation with AstroScheduller
 
