@@ -20,6 +20,12 @@ The most recent stable version of  AstroScheduller Package is available on PyPI.
 pip install AstroScheduller
 ```
 
+If you already have an older version of AstroScheduller installed, as AstroScheduller is currently in active update, we strongly recommend that you often update the package as follows
+
+```{shell}]
+pip install --upgrade astroscheduller
+```
+
 The AstroScheduller GUI uses a package called [Tkinter](https://tkdocs.com/tutorial/install.html), which is required since AstroScheduller v1.0.0. **This package will not be able to install automatically by PyPI. **If you are using the [Anaconda](https://www.anaconda.com), the Tkinter Package might be included in the distribution. To check if Tkinter has been already installed, try the following: 
 
 ```{shell}
